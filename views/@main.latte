@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miiflo</title>
+  <link rel="icon" href="img/miiflo_pix2.png" sizes="32x32" type="image/png" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="css/about.css" rel="stylesheet" type="text/css" />
+
+    <!--DEBUG-->
+	{* <script src="https://unpkg.com/htmx.org@2.0.2"></script> *}
+	<!--PRODUCTION-->
+	<script src="js/htmx.2.0.3/htmx.min.js"></script>
+	{session_start()}
+</head>
+<!--Outside bode-->
+<body>
+<!--Inside body-->
+	<div id="my-page">
+		<!--Inside my-page-->
+		<div id="my-content">
+			<!--Inside my-content-->
+			{block content}{/block}
+		</div>
+	</div>
+
+	<div class="navbar navbar-top">
+		<img class="icon" src="img/miiflo_pix2.png" alt="icon" />
+		<span class="brand">Miiflo</span>
+		<a href="#" hx-get="home/btn" hx-trigger="click" hx-target="#my-content" hx-swap="innerHTML" hx-push-url="/home">Blaha</a>
+		<a href="#" hx-get="about/btn" hx-trigger="click" hx-target="#my-content" hx-swap="innerHTML" hx-push-url="/about">About</a>
+  </div>
+
+	<div class="navbar navbar-bottom">
+		<span>&nbsp;</span>
+		<span>Copyright Don Ken Productions &copy 2012 - {date("Y")}</span>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+body{
+	background-color:#444444;
+	font-family: sans-serif;
+	color: #cccc33;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+#my-page {
+	margin:auto;
+	width:90%;
+	height: 90%;
+	overflow:auto;
+	border:2px solid;
+	border-color:#cccc33;
+	border-radius:20px 20px 20px 20px;
+	position: relative;
+}
+
+#my-content {
+  margin:0px;
+  padding: 16px;
+  margin:0 auto;
+  width: inherit;
+  height:inherit;
+  background-color: #444444;
+  overflow:auto;
+}
+
+#podshow {
+	margin:0 auto;
+	width: 100%;
+	height: 80%;
+	position:relative;
+
+}
+#podContainer {
+	margin: 0 25%;
+	width: 940px;
+	/*height:502px;*/
+	overflow:auto;
+	position:fixed;
+}
+
+div.post {
+	display: block;
+	border-top: 2px solid #333;
+	width: inherit;
+	text-align: center;
+}
+
+.icon {
+	float: left;
+	display: block;
+	border-radius:5px;
+	margin: 0.5em;
+}
+
+.about_icon {
+	border:1px solid;
+	border-color:#cccc33;
+	border-radius:5px;
+}
+
+/* Style the navbar */
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+}
+  
+/* Navbar links */
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+
+.navbar span {
+	float: left;
+	display: block;
+	color: #a2a2a2;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+
+.navbar-top {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+
+.navbar-bottom {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.blog-float-container {
+    padding: 20px;
+}
+.blog-float-child {
+    width: 45%;
+    float: left;
+    padding: 20px;
+	@media (max-width: 60em), screen and (orientation: portrait)  {
+		float: none;
+		width: 90%;	
+	}
+}
+textarea.blog-post {
+	width: 100%;
+}

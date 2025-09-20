@@ -1,0 +1,31 @@
+{layout '@main.latte'}
+
+{block content}
+<!-- If looged in -->
+{if $loggedIn == true}
+<div id="my-content" class="blog-float-container">
+  <div class="blog-float-child">
+  <textarea id="blog-post" class="blog-post" type="blog-post" name="blog-post"
+    hx-get="/cgi/blog.php"
+    hx-trigger="change, keyup delay:200ms changed"
+    hx-target="#blog-preview"
+    rows="40"></textarea>
+  <button hx-post="/cgi/blog.php" hx-include="#blog-post">Post</button>
+</div>
+<div class="blog-float-child">
+  <div id="blog-preview" name="blog-preview"></div>
+</div>
+</div>
+
+<!-- Else -->
+{else}
+<div id="my-content">
+<form id="admin" hx-post="/cgi/login.php" hx-target="body">
+    Name: <input type="text" name="name" placeholder="name">
+    <span class="error">*</span><br>
+    Pass: <input type="password" name="password" placeholder="password"><br>
+    <input name="login" type="submit" value="Login">
+</form>
+</div>
+{/if}
+{/block}

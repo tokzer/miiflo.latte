@@ -1,0 +1,35 @@
+.overflow_div
+{
+height:inherit;
+width:inherit;
+overflow:hidden;
+}
+.social_div
+{
+position:relative;
+background:#f9f9f9;
+float:left;
+margin:5px;
+width:64px;
+height:96px;
+border:1px solid;
+border-color:#cccc33;
+border-radius:5px;
+}
+.social_pic
+{
+position:absolute;
+right:-5px;
+top:-5px;
+}
+.social_head_pic{
+position: relative;
+top: 25%;
+left: 25%;
+width: 32px;
+height: 32px;
+}
+.social_a
+{
+float:right;
+}

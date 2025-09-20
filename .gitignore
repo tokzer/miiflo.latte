@@ -1,0 +1,8 @@
+.env
+.htaccess
+*.lock
+binero-default.html
+/blog
+/compiles
+/secrets
+/vendor

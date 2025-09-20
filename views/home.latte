@@ -1,0 +1,7 @@
+{layout $layout ? '@main.latte' : ''}
+
+{block content}
+	<div hx-get="/cgi/blog.php?q=1" hx-trigger="load">
+		<p>Ofiltrerat nonsens fr&aring;n mig.</p>
+	</div>
+{/block}

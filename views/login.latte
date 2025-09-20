@@ -1,0 +1,13 @@
+<!-- @extends('main') -->
+@section('content')
+<div class="my-content">
+<form id="admin" hx-post="/index.php">
+    <label for="name">Name: </label>
+    <input type="email" name="name">
+    <span class="error">*</span><br>
+    <label for="password">Pass: </label>
+    <input type="password" name="password"><br>
+    <input name="login" type="submit" value="Login">
+</form>
+</div>
+@endsection
