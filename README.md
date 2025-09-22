@@ -1,13 +1,20 @@
 # miiflo.se
 
-A personal web site.
+A simple web site.
 
-### Languages
+## Languages
 - html
 - css
 - php
 
-### Frameworks
-- [latte|latte.com]
-- [htmx|  htmx.org]
-  
+## Frameworks
+### Php
+- [latte](https://latte.nette.org/)
+- [PHP dotenv](https://github.com/vlucas/phpdotenv)
+- [Parsedown](https://github.com/erusev/parsedown)
+
+### Javascript
+- [htmx](https://htmx.org/)
+
+## Icons
+- [iconmonstr](https://iconmonstr.com/)
